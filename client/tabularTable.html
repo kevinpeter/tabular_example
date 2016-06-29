@@ -1,0 +1,15 @@
+<template name="tabularTable">
+    {{initRenderStart}}
+    {{#if isReady}}
+        {{> tabular table=_tableData class="table  table-condensed"}}
+    {{else}}
+        {{initPublish}}
+        <div >
+            <div class="col-sm-5"></div>
+            <div class="col-sm-1">
+                Loading ...
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+    {{/if}}
+</template>
