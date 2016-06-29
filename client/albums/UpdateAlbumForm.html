@@ -1,0 +1,17 @@
+<template name="UpdateAlbumForm">
+
+	{{#autoForm collection="Albums" id="afUpdateAlbum" type="update" doc=selectedAlbumDoc}}
+
+		<fieldset>
+			{{> afQuickField name='artNr'}}
+			{{> afQuickField name='artistName'}}
+			{{> afQuickField name='albumTitle'}}
+			{{> afQuickField name='inStock'}}
+			{{> afQuickField name='backOrdersPossible'}}
+			{{> afQuickField name='price'}}
+	    </fieldset>
+	    <button type="submit" class="btn btn-primary">Update</button>
+
+	{{/autoForm}}
+
+</template>

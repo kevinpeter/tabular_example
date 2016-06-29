@@ -1,0 +1,23 @@
+<template name="Albums">
+
+    <div class="container">
+
+        {{#if currentUser}}
+
+            {{> TmplModalUpdate}}
+
+            {{> TmplModalRemove}}
+
+        {{/if}}
+
+        {{> tabular table=TabularTables.AlbumsList class="table table-striped table-bordered table-condensed"}}
+
+        {{#if currentUser}}
+
+    	   {{> InsertAlbumForm}}
+
+        {{/if}}
+
+    </div>
+
+</template>
